@@ -4,6 +4,8 @@ import gym
 from gym import Env, spaces
 import time
 
+from src import patch
+
 import os
 
 class Portal2(Env):
@@ -12,6 +14,8 @@ class Portal2(Env):
 
         self.location = portal2_dir
 
+        if(patch.patch_portal2(portal2_dir) != -1):
+            return -1
 
-        
+        pass
 
