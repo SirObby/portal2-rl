@@ -8,7 +8,8 @@ def build_sar():
     if(platform == 'linux'):
         subprocess.Popen('make',shell=True).wait()
     elif(platform == 'win32'):
-        print("NOO VISUAL STUDIO")
+        print("Building for windows is untested.")
+        subprocess.Popen('msbuild SourceAutoRecord.sln', shell=True).wait()
     else:
         raise RuntimeError(
             """
