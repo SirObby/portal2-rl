@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 import os
 
-from src import patch
-from src import sar_handler
+from portal2rl import patch
+from portal2rl import sar_handler
 
 VERSION = '0.0.1' 
 DESCRIPTION = 'Portal2 gym environment'
@@ -28,5 +28,6 @@ setup(
         classifiers= [
             "Programming Language :: Python :: 3",
             "Operating System :: OS Independent",
-        ]
+        ],
+        include_package_data=True,
 )
