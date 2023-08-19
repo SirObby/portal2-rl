@@ -4,8 +4,8 @@ from sys import platform
 # This is the base SAR, I've realized we can't actually use this. 
 # Need a version of SAR with the pause and unpause commands.
 # Might also have to bind a reset command.
-SAR_SO_DOWNLOAD='https://github.com/p2sr/SourceAutoRecord/releases/download/1.12.7/sar.so'
-SAR_DLL_DOWNLOAD='https://github.com/p2sr/SourceAutoRecord/releases/download/1.12.7/sar.dll'
+#SAR_SO_DOWNLOAD='https://github.com/p2sr/SourceAutoRecord/releases/download/1.12.7/sar.so'
+#SAR_DLL_DOWNLOAD='https://github.com/p2sr/SourceAutoRecord/releases/download/1.12.7/sar.dll'
 
 def log(out:str):
     pass
@@ -16,18 +16,24 @@ def patch_portal2(path: str):
            log("sar installed, woo") 
         else:
             if(platform == 'linux'):
-                r = requests.get(SAR_SO_DOWNLOAD)  
-                with open(os.path.join(path, 'sar.so'), 'wb') as f:
-                    f.write(r.content)
-                log("download sar.so")
+                #r = requests.get(SAR_SO_DOWNLOAD)  
+                #with open(os.path.join(path, 'sar.so'), 'wb') as f:
+                #    f.write(r.content)
+                log("move sar.so")
             elif(platform == 'win32'):
-                r = requests.get(SAR_DLL_DOWNLOAD)  
-                with open(os.path.join(path, 'sar.dll'), 'wb') as f:
-                    f.write(r.content)
-                log("download sar.dll")
+                #r = requests.get(SAR_DLL_DOWNLOAD)  
+                #with open(os.path.join(path, 'sar.dll'), 'wb') as f:
+                #    f.write(r.content)
+                log("move sar.dll")
             else:
-                print("???????? what are you using??????")
+                raise RuntimeError(
+                """
+                Your current platform environment is not compatible. 
+            portal2-rl only supports the following platforms: linux, win32
+                """)
     else:
-        print("Portal 2 not found at directory, could be that you don't have it in the Steam default path, or that you defined the wrong one in the Portal2 class.")
-        return -1
+        raise RuntimeError(
+        """ 
+        The Portal-2 game directory is invalid, this could be, because you entered the wrong path when declaring the Portal2 class.
+        """)
     pass

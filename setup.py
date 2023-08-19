@@ -1,13 +1,19 @@
 from setuptools import setup, find_packages
+import os
 
 from src import patch
+from src import sar_handler
 
 VERSION = '0.0.1' 
 DESCRIPTION = 'Portal2 gym environment'
 LONG_DESCRIPTION = 'This is a package for creating an OpenAI gym environment for the video game Portal 2.'
 DEFAULT_PORTAL2_PATH = '~/.local/share/Steam/steamapps/common/Portal 2/'
 
-patch.patch_portal2(DEFAULT_PORTAL2_PATH)
+sar_handler.build_sar()
+if(os.path.exists(DEFAULT_PORTAL2_PATH)):
+    patch.patch_portal2(DEFAULT_PORTAL2_PATH)
+else:
+    print("Portal2 is unpatched! It will be patched once Portal2 class is declared.")
 
 setup(
         name="portal2-rl", 

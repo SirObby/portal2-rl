@@ -1,0 +1,3 @@
+[submodule "lib/SourceAutoRecord"]
+	path = lib/SourceAutoRecord
+	url = https://github.com/SirObby/SourceAutoRecord.git
