@@ -27,7 +27,7 @@ async def render_demos():
                 f.write("sar_disable_no_focus_sleep 1\n")
 
                 f.write("sar_on_demo_stop quit\n")
-                f.write(f"playdemo demos/{filename}\n")
+                #f.write(f"playdemo demos/{filename}\n")
 
                 f.write("""
 sv_cheats 1
@@ -137,14 +137,18 @@ cl_shadowtextureoverlaysize 4096
 cl_forcepreload 1
 r_portal_use_pvs_optimization 0
 """)
-           # mlugg: the game can sometimes freeze, either just from bad luck or from dodgy
+
+            
+                f.write(f"playdemo demos/{filename}\n")
+                f.write("quit")
+            # mlugg: the game can sometimes freeze, either just from bad luck or from dodgy
             # demos. this is the maximum time the game can be open before we give up and
             # kill it 
             # samueL: random number I chose
             timeout = 90000#duration * settings.RENDER_TIMEOUT_FACTOR + settings.RENDER_TIMEOUT_BASE
        
         # do the render
-            proc = await asyncio.subprocess.create_subprocess_exec(f"{PORTAL2_DIRECTORY}/portal2.sh", "-game", "portal2", "-novid", "-vulkan", "-windowed", "-w", "1280", "-h", "720", "+mat_motion_blur_enabled", "0", cwd=PORTAL2_DIRECTORY)
+            proc = await asyncio.subprocess.create_subprocess_exec("/home/sir/.local/share/Steam/ubuntu12_32/steam-runtime/run.sh", f"{PORTAL2_DIRECTORY}/portal2.sh", "-game", "portal2", "-steam", "-novid", "-windowed", "-w", "960", "-h", "540", "0", cwd=PORTAL2_DIRECTORY)
             try:
                 await asyncio.wait_for(proc.communicate(), timeout)
             except asyncio.TimeoutError:
