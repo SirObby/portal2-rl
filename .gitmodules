@@ -1,3 +1,6 @@
 [submodule "lib/SourceAutoRecord"]
 	path = lib/SourceAutoRecord
 	url = https://github.com/SirObby/SourceAutoRecord.git
+[submodule "training/libs/sdp-c"]
+	path = training/libs/sdp-c
+	url = https://github.com/evanlin96069/sdp-c.git

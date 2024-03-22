@@ -7,8 +7,8 @@ import shutil
 import asyncio
 import threading
 
-#PORTAL2_DIRECTORY="~/.local/share/Steam/steamapps/common/Portal 2/"
-PORTAL2_DIRECTORY="/run/media/sir/2tb drive that I own/SteamLibrary/steamapps/common/Portal 2"
+PORTAL2_DIRECTORY="/home/portal/.steam/steam/steamapps/common/Portal 2"
+#PORTAL2_DIRECTORY="/run/media/sir/2tb drive that I own/SteamLibrary/steamapps/common/Portal 2"
 
 async def render_demos():
     for filename in os.listdir("demos/"):
@@ -16,7 +16,8 @@ async def render_demos():
 
         if os.path.isfile(file):
             print(file)
-            shutil.copy2(file,os.path.join(PORTAL2_DIRECTORY, f"portal2/{file}"))
+            print(os.path.join(PORTAL2_DIRECTORY, f"portal2/{file}"))
+            #shutil.copy2(file,os.path.join(PORTAL2_DIRECTORY, f"portal2/{file}"))
         
             # total demo duration
             #duration = 0.0
@@ -148,7 +149,7 @@ r_portal_use_pvs_optimization 0
             timeout = 90000#duration * settings.RENDER_TIMEOUT_FACTOR + settings.RENDER_TIMEOUT_BASE
        
         # do the render
-            proc = await asyncio.subprocess.create_subprocess_exec("/home/sir/.local/share/Steam/ubuntu12_32/steam-runtime/run.sh", f"{PORTAL2_DIRECTORY}/portal2.sh", "-game", "portal2", "-steam", "-novid", "-windowed", "-w", "960", "-h", "540", "0", cwd=PORTAL2_DIRECTORY)
+            proc = await asyncio.subprocess.create_subprocess_exec("/home/portal/.steam/steam/ubuntu12_32/steam-runtime/run.sh", f"{PORTAL2_DIRECTORY}/portal2.sh", "-game", "portal2", "-steam", "-novid", "-windowed","-vulkan", "-w", "960", "-h", "540", "0", cwd=PORTAL2_DIRECTORY)
             try:
                 await asyncio.wait_for(proc.communicate(), timeout)
             except asyncio.TimeoutError:
