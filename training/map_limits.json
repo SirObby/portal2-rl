@@ -1,0 +1,188 @@
+{
+    "sp_a1_intro1": {
+        "name": "container-ride"
+    },
+    "sp_a1_intro2": {
+        "name": "portal-carousel"
+    },
+    "sp_a1_intro3": {
+        "name": "portal-gun"
+    }, 
+    "sp_a1_intro4": {
+        "name": "smooth-jazz"
+    },
+    "sp_a1_intro5": {
+        "name": "cube-momentum"
+    },
+    "sp_a1_intro6": {
+        "name": "future-starter"
+    },
+    "sp_a1_intro7": {
+        "name": "secret-panel"
+    },
+    "sp_a1_wakeup": {
+        "name": "wakeup"
+    },
+    "sp_a2_intro": {
+        "name":"incinerator"
+    },
+    "sp_a2_laser_intro": {
+        "name": "laser-intro"
+    },
+    "sp_a2_laser_stairs": {
+        "name": "laser-stairs"
+    },
+    "sp_a2_dual_lasers": {
+        "name": "dual-lasers"
+    },
+    "sp_a2_laser_over_goo": {
+        "name": "laser-over-goo"
+    },
+    "sp_a2_catapult_intro": {
+        "name": "catapult-intro"
+    },
+    "sp_a2_trust_fling": {
+        "name": "trust-fling"
+    },
+    "sp_a2_pit_flings": {
+        "name": "pit-flings"
+    },
+    "sp_a2_fizzler_intro": {
+        "name": "fizzler-intro"
+    },
+    "sp_a2_sphere_peek": {
+        "name": "ceiling-catapult"
+    },
+    "sp_a2_ricochet": {
+        "name": "ricochet"
+    },
+    "sp_a2_bridge_intro": {
+        "name": "bridge-intro"
+    },
+    "sp_a2_bridge_the_gap": {
+        "name": "bridge-the-gap"
+    },
+    "sp_a2_turret_intro": {
+        "name": "turret-intro"
+    },
+    "sp_a2_laser_relays": {
+        "name": "laser-relays"
+    },
+    "sp_a2_turret_blocker": {
+        "name": "turret-blocker"
+    },
+    "sp_a2_laser_vs_turret": {
+        "name": "laser-vs-turret"
+    },
+    "sp_a2_pull_the_rug": {
+        "name": "pull-the-rug"
+    },
+    "sp_a2_column_blocker": {
+        "name": "column-blocker"
+    },
+    "sp_a2_laser_chaining": {
+        "name": "laser-chaining"
+    },
+    "sp_a2_triple_laser": {
+        "name": "triple-laser"
+    },
+    "sp_a2_bts1": {
+        "name": "jail-break"
+    },
+    "sp_a2_bts2": {
+        "name": "escape"
+    },
+    "sp_a2_bts3": {
+        "name": "turret-factory"
+    },
+    "sp_a2_bts4": {
+        "name": "turret-sabotage"
+    },
+    "sp_a2_bts5": {
+        "name": "neurotoxin-sabotage"
+    },
+    "sp_a2_bts6": {
+        "name": "tube-ride"
+    },
+    "sp_a2_core": {
+        "name": "core"
+    },
+    "sp_a3_00": {
+        "name": "long-fall"
+    },
+    "sp_a3_01": {
+        "name": "underground"
+    },
+    "sp_a3_03": {
+        "name": "cave-johnson"
+    }, 
+    "sp_a3_jump_intro": {
+        "name": "repulsion-intro"
+    },
+    "sp_a3_bomb_flings": {
+        "name": "bomb-flings"
+    },
+    "sp_a3_crazy_box": {
+        "name": "crazy-box"
+    },
+    "sp_a3_transition01": {
+        "name": "potatos"
+    },
+    "sp_a3_speed_ramp": {
+        "name": "propulsion-intro"
+    },
+    "sp_a3_speed_flings": {
+        "name": "propulsion-flings"
+    },
+    "sp_a3_portal_intro": {
+        "name": "conversion-intro"
+    },
+    "sp_a3_end": {
+        "name": "three-gels"
+    },
+    "sp_a4_intro": {
+        "name": "test"
+    },
+    "sp_a4_tb_intro": {
+        "name": "funnel-intro"
+    },
+    "sp_a4_tb_trust_drop": {
+        "name": "ceiling-button"
+    },
+    "sp_a4_tb_wall_button": {
+        "name": "wall-button"
+    },
+    "sp_a4_tb_polarity": {
+        "name": "polarity"
+    },
+    "sp_a4_tb_catch": {
+        "name": "funnel-catch"
+    },
+    "sp_a4_stop_the_box": {
+        "name": "stop-the-box"
+    },
+    "sp_a4_laser_catapult": {
+        "name": "laser-catapult"
+    },
+    "sp_a4_laser_platform": {
+        "name": "laser-platform"
+    },
+    "sp_a4_speed_tb_catch": {
+        "name": "propulsion-catch"
+    },
+    "sp_a4_jump_polarity": {
+        "name": "repulsion-polarity"
+    },
+    "sp_a4_finale1": {
+        "name": "finale-1"
+    },
+    "sp_a4_finale2": {
+        "name": "finale-2"
+    },
+    "sp_a4_finale3": {
+        "name": "finale-3"
+    },
+    "sp_a4_finale4": {
+        "name": "finale-4"
+    } 
+}
