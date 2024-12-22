@@ -23,7 +23,7 @@ setup(
         description=DESCRIPTION,
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
-        install_requires=['gym', 'numpy'],  
+        install_requires=['gymnasium', 'numpy'],  
         keywords=['python', 'portal2', 'openai', 'gym'],
         classifiers= [
             "Programming Language :: Python :: 3",
